@@ -1,0 +1,434 @@
+/*Cabecera de todas las páginas*/
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-left: 290px;
+}
+/*Pie de página de todas las páginas*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    padding-left: 350px;
+    margin-top: auto;
+   
+}
+/*Se aplica a todas las imágenes*/
+img{
+    height: auto;
+    display: block; /* Asegura que la imagen no tenga márgenes laterales */
+    margin: auto;
+    max-width: 50%;
+    min-height: 100px; /* Asegura que el contenido tenga al menos la altura de la ventana */
+    margin-top: -50px; /* Ajusta el margen superior para centrar el contenido verticalmente */
+}
+/*Se aplica a la imagen de la página principal*/
+.imagen-principal {
+    height: auto;
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    min-height: 100px;
+    margin-top: -50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.454); /* Añade la sombra solo a la imagen de la página principal */
+    border-radius: 8px;
+}
+
+
+/*Se aplica a todos los botones*/
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        margin: 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center; /* Centra los botones horizontalmente en cada recuadro */
+        justify-content: center; /* Centra los botones verticalmente en cada recuadro */
+
+
+
+
+    }
+    /*Se aplica al botón HTML de la página principal*/
+    button.html {
+        background-color: #EC4F00; /* Naranja claro */
+        color: #fff; /* Texto blanco para contrastar */
+    }
+      /*Se aplica al botón CSS de la página principal*/
+    button.css {
+        background-color: #0FA0D3; /* Azul claro */
+        color: #fff; /* Texto blanco para contrastar */
+    }
+    /*Se aplica a los botones del footer*/
+    button.botonfooter{
+        padding: 10px 20px; /* Ajusta el padding según tus preferencias */
+        font-size: 14px; /* Ajusta el tamaño de la fuente según tus preferencias */
+        width: 400px; /* Ajusta el ancho según tus preferencias */
+        background-color: black;
+        color: #fff;
+    }
+/*Se aplica al botón de contacto de la página faq*/
+    button.botoncontactofaq{
+        padding: 10px 20px;
+        margin-bottom: 60px;
+        margin-top: 30px;
+        font-size: 20px;
+        width: 200px;
+        background-color:black;
+        color: #fff;
+    }
+    /*Se aplica a los botones de enviar y reiniciar del formulario de contacto*/
+    .botonespagcontacto{
+        display: flex;
+        gap: 20px; /* Espacio entre los elementos */
+        margin-left: 213px;
+        padding-top: 15px;
+    }
+    /*Se aplica a todos los recuadros*/
+    .recuadro {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+/*Se aplica al recuadro HTML*/
+    .recuadro-html{
+        background-color: #FF9B5A  ; /* Color de fondo para ambos recuadros */
+        box-shadow: 0 0 20px rgba(135, 72, 1, 0.454);
+        padding: 20px;
+        border-radius: 10px;
+        width: 45%; /* Ancho del recuadro */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los botones horizontalmente en cada recuadro */
+        justify-content: center; /* Centra los botones verticalmente en cada recuadro */
+    }
+   /*Se aplica al recuadro CSS*/
+    .recuadro-css {
+        background-color: #A9D9FF; /* Color de fondo para ambos recuadros */
+        box-shadow: 0 0 20px rgba(4, 68, 107, 0.454);
+        padding: 20px;
+        border-radius: 10px;
+        width: 45%; /* Ancho del recuadro */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los botones horizontalmente en cada recuadro */
+        justify-content: center; /* Centra los botones verticalmente en cada recuadro */
+    }
+    /*Se aplica al cuerpo*/
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /*Se aplica a toda la página principal*/
+    .pagina-principal {
+        background-color: #022e3c57; /* Cambia el color de fondo según tus preferencias */
+    }
+   /*Se aplica a toda la página faq*/
+    .pagina-faq {
+        background-color: #022e3c57;
+    }
+    /*Se aplica a toda la página contacto*/
+    .pagina-contacto{
+        background-color: #022e3c57;
+    }
+     /*Se aplica a toda la página formulario*/
+     .pagina-formulario{
+        background-color: #022e3c57;
+    }
+    /*Se aplica a toda la página html*/
+     .pagina-html{
+        background-color: #022e3c57;
+    }
+    /*Actúa de contenedor para ajustar algunos aspectos como el header*/
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px; /* Ajusta el margen superior para evitar que el header tape el contenido */
+        text-align: center;
+       
+    }
+    /*Se aplica al menú de navegación lateral*/
+    .menu-lateral {
+        width: 250px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+    /*Se aplica a la lista del menú de navegación */
+    .menu-lateral ul {
+        list-style: none;
+        padding: 0;
+    }
+    /*Se aplica al menú de navegación para ponerle estilos como color y relleno*/
+    .menu-lateral a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 10px 0;
+        transition: background-color 0.3s;
+    }
+    /* Hace que al pasar el cursor se seleccione vea de color cada apartado */
+    .menu-lateral a:hover {
+        background-color: #555;
+    }
+   /*Se aplica a la imagen del navegador*/
+    .menu-lateral .imagen-menu {
+        margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+        max-width: 50%; /* Ajusta el ancho máximo de la imagen para que se ajuste al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+
+    /*Se aplica al contenido de las páginas*/
+    .contenido {
+        flex: 1;
+        padding: 10px;
+        margin-left: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido verticalmente */
+        min-height: 600px; /* Asegura que el contenido tenga al menos la altura de la ventana */
+        }
+        /*Se aplica a la sección de preguntas faq*/
+        .faq-section {
+            max-width: 800px;
+            margin: -20px auto 60px;
+            background-color: #03a8a85e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(10, 94, 102, 0.454);
+            text-align: left;
+        }
+        /*Se aplica a las preguntas faq*/
+        .question {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: #333;
+            font-size: 20px;
+        }
+        /*Se aplica al texto */
+        .texto{
+            color: #333; /* Color del texto */
+            font-size: 30px; /* Tamaño de la fuente */
+            font-weight: bold; /* Texto en negrita */
+        }
+        /*Se aplica al texto de los recuadros*/
+        .texto-recuadro{
+            color: #333;
+            font-size: 20px;
+        }
+        /*Se aplica a la etiqueta del formulario*/
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       
+        /*Se aplica a las leyendas del formulario*/
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        /*Se aplica a los diferentes campos y aspectos del formulario*/
+        input[type="text"],
+        select,
+        textarea,
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            resize: none; /*Evita que se pueda redimensionar el textarea*/
+        }
+
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: rgb(3, 122, 143);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #000000;
+        }
+       
+        /*Coloca el formulario en el centro*/
+        .posicion-contacto {
+            margin-left: 300px;
+            text-align: center;
+            padding-bottom: 100px;
+
+
+        }
+        /*Posición de las casillas de elegir la duda*/
+        .posicion-duda {
+            display: flex;
+            margin-left: 180px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            gap: 10px;
+        }
+        /*Guia*/
+.usar-pagina{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #333; /* Color del texto */
+    font-size: 20px; /*Tamaño de la fuente */
+    text-align: left;
+    background-color: #3ecac360;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 1000px;
+
+
+}
+.centrar-guia{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+ /*este es del formulario*/
+
+ #Formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-left: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+}
+.contenido{
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    gap: 10px;
+}
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b635b;
+}
+/*html*/
+.contenedor {
+    display: flex;
+    width: 100%;
+}
+
+.menu-lateral {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 200px;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral li {
+    margin-bottom: 10px;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-lateral a:hover {
+    background-color: #555;
+}
+
+.imagen-menu {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+}
+
+.indice {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Esto hace que los elementos del índice se muestren en una fila horizontal */
+    overflow-x: auto;
+}
+
+.indice ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos de la lista se muestren en una fila horizontal */
+}
+
+.indice li {
+    margin-right: 10px;
+}
+
+.indice a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.indice a:hover {
+    background-color: #ddd;
+}
+
+.tabla{
+    background-color: white;
+}
+

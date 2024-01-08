@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"  class="pagina-contacto">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Imagenes/logo html css.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO DE CONTACTO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+    <header>
+        <h1>FORMULARIO DE CONTACTO</h1>
+    </header>
+
+
+
+
+    <div class="contenedor">
+        <nav class="menu-lateral">
+            <!-- Insertar imagen justo por encima del primer apartado -->
+            <img class="imagen-menu" src="Imagenes/logo html css.png">
+
+
+
+
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="faq.html">PREGUNTAS FRECUENTES (FAQ)</a></li>
+                <li><a href="formulario.html">FORMULARIO HTML Y CSS</a></li>
+                <li><a href="https://www.cubicfactory.com/jseditor/">PRÁCTICA TUS CONOCIMIENTOS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+<!-- Apartados del formulario -->
+    <div class="posicion-contacto">
+        <form action="#" method="post">
+   
+            <!-- Introducir el nombre, puede contener letras mínusculas y mayúsculas de la a la z con acentos y otros signos-->
+            <label for="nombre"><b>Nombre completo:</b></label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúüÜñÑ\s]{1,50}" required>
+           
+            <!-- Introducir el correo electrónico -->
+            <label for="correo"><b>Correo electrónico:</b></label>
+            <input type="email" id="correo" name="correo" multiple required>
+
+
+            <!-- Seleccionar sobre qué trata la duda -->
+                <label for="tipo"><b>¿Sobre qué trata tu duda?</b></label>
+
+
+                <div class="posicion-duda">
+                <input type="radio" id="dudaHTML" name="duda" value="HTML" required>
+                <label for="dudaHTML">HTML</label>
+                <input type="radio" id="dudaCSS" name="duda" value="CSS" required>
+                <label for="dudaCSS">CSS</label>
+                <input type="radio" id="dudaOtro" name="duda" value="otro" required>
+                <label for="dudaOtro">Otro</label>
+                </div>
+
+
+            <!-- Escribir el problema sobre la duda máximo 1000 caracteres-->            
+            <label for="ayuda"><b>¿En qué te podemos ayudar?</b></label>
+            <textarea id="ayuda" name="ayuda" rows="7" maxlength="1000" required></textarea>
+           
+            <!-- Condiciones del servicio -->        
+            <label for="condiciones"><b>Condiciones del servicio de ayuda:</b></label>
+            <textarea id="condiciones" readonly rows="7" cols="80">
+
+
+        Al utilizar nuestro servicio gratuito de ayuda aceptas cumplir:
+
+
+       
+    - Uso Apropiado: Utilizar los recursos de manera ética y legal.
+    - Actualizaciones: Estar al tanto de posibles cambios en HTML y CSS.
+            </textarea>
+           
+            <!-- Casilla que se debe marcar para aceptar las condiciones -->
+            <label for="aceptaCondiciones"><b>Acepto las condiciones del servicio:</b></label>
+            <input type="checkbox" id="aceptaCondiciones" name="aceptaCondiciones" required><br>
+   
+            <!-- Botones para enviar o reinciar los datos del formulario -->
+        <div class="botonespagcontacto">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+        </div>
+        </form>      
+    </div>
+   
+    <!-- Footer con botones -->
+    <footer>
+        <p>APRENDIENDO HTML y CSS </p><br>
+        <p>Integrantes: Liliana Garcia Severiche, Lara Sono de la Viuda, Adrián Guerrero, Iker Aguilar Torres.</p>
+        <a href="faq.html"><button class="botonfooter">PREGUNTAS FRECUENTES (FAQ)</button></a>
+        <a href="contacto.html"><button class="botonfooter">CONTACTO</button></a>
+   
+   
+</footer>
+</body>
+
+
+</html>
